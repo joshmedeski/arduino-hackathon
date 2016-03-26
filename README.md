@@ -20,7 +20,7 @@ __Josh:__
   + [ ] Connect to IFTTT API
 
 __Jarrett:__
-- [ ] Purchase shaker unit from Daniel's article
+- [ ] Purchase shaker unit from [Daniel's article](http://m.instructables.com/id/How-to-use-a-vibration-sensor-shake-switch-Arduino)
 - [ ] Write infrastructure for Shaker unit
 
 __Daniel:__
