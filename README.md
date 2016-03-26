@@ -7,7 +7,11 @@ We want to build a sensor that monitors the status of your washer/dryer and can 
 ### TODO:
 - [ ] Find a wifi module
 - [ ] Connect to the IFTTT API
-- [ ] Find an accelerometer module
+- [ ] Find an shaker module
 - [ ] Combine the modules and build out the prototype
 - [ ] Test and refine code
 - [ ] Build MVP (Minimum Viable Product)
+
+## Personalizing Pins
+
+To adjust the pin settings, create a `pins.personal.h` file in the `infrastructure` directory and overwrite any of the pins defined from `pins.h`.
