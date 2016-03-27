@@ -1,6 +1,6 @@
-#include "infrastructure/commons.h"
-#include "wifi/wifi_implementation.h"
-#include "shaker/shaker_implementation.h"
+#include <commons.hpp>
+#include <wifi_implimentation.hpp>
+#include <shaker_implimentation.hpp>
 
 IWifi* wifi;
 IShaker* shaker;
@@ -11,11 +11,9 @@ bool CanContinue;
 void setup()
 {
 	wifi = new WifiCard();
-	shaker = new ShakerUnit();
+	//shaker = new ShakerUnit();
 
-	shaker->Calibrate();
-
-
+	//shaker->Calibrate();
 }
 
 // the loop function runs over and over again forever
