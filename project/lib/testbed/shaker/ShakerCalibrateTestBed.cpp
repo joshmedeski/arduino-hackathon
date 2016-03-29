@@ -22,4 +22,6 @@ void ShakerCalibrateTestBed::loop()
 
   m_pBlinker->SetBlink(650, 350); // assumes Calibrate worked.
 
+  delay(10000);
+
 }

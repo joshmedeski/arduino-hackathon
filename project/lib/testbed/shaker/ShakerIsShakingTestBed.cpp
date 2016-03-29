@@ -21,4 +21,6 @@ void ShakerIsShakingTestBed::loop()
     m_pBlinker->SetBlink(250);
   else
     m_pBlinker->SetBlink(1000);
+
+    delay(5000);
 }
