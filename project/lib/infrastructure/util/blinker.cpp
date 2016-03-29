@@ -10,6 +10,8 @@ Blinker::Blinker()
 
   m_iOn = -1;
   m_iOff = -1;
+  m_iCnt = 0;
+  m_iDesiredCnt = 0;
 }
 
 void Blinker::setupInterruptCode()
@@ -34,6 +36,17 @@ void Blinker::setupInterruptCode()
 
 void Blinker::DoBlink()
 {
+  if(m_iOn == -1)
+  {
+    if(m_bState)
+    {
+      digitalWrite(LED,LOW);
+      m_iCnt=0;
+      m_bState = false;
+    }
+    return;
+  }
+
   if(m_iCnt != m_iDesiredCnt)
   {
     m_iCnt++;

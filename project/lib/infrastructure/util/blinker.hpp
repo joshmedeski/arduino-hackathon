@@ -20,21 +20,21 @@ public:
   private:
     void setupInterruptCode();
 
-    bool m_bState;
+    volatile bool m_bState;
 
     int m_iOn;
     int m_iOff;
-    int m_iCnt;
-    int m_iDesiredCnt;
+    volatile int m_iCnt;
+    volatile int m_iDesiredCnt;
 };
 
 // add this to main.cpp to use this class!
 /*
-volatile Blinker* blinker; // assign this in setup();
+Blinker* pBlinker=0; // assign this in setup();
 
 ISR(TIMER0_COMPA_vect){//timer0 interrupt
-  if(blinker != null)
-    blinker->DoBlink();
+  if(pBlinker != 0)
+    pBlinker->DoBlink();
 }
 */
 
