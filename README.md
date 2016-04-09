@@ -5,7 +5,7 @@ Just a little side project with some friends learning how to use Arduino units.
 We want to build a sensor that monitors the status of your washer/dryer and can ping you through [IFTTT](http://ifttt.com) that your load is complete.
 
 ### Project Overview:
-- [ ] Build out code infrastructure
+- [X] Build out code infrastructure
 - [ ] Combine the modules and build out the prototype
 - [ ] Test and refine code
 - [ ] Build MVP (Minimum Viable Product)
@@ -24,9 +24,9 @@ __Jarrett:__
 - [ ] Write infrastructure for Shaker unit
 
 __Daniel:__
-- [ ] Create `pins.h`
-- [ ] Buy Arduino kits and proto boards
-- [ ] Create test beds for Josh & Jarrett's work
+- [X] Create `pins.h`
+- [X] Buy Arduino kits and proto boards
+- [X] Create test beds for Josh & Jarrett's work
 
 ## Personalizing Pins
 
