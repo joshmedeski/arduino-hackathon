@@ -2,6 +2,7 @@
 #define COMMON
 
 //#include <arduino.h>
+#define NORMAL_BLINK 1000
 
 #ifdef USEPERSONAL
   #include "pins.personal.hpp"
@@ -9,7 +10,9 @@
   #include "pins.hpp"
 #endif
 
-#include "iwifi.hpp"
-#include "ishaker.hpp"
+#include "Interfaces/iBlinker.hpp"
+#include "Interfaces/iControlledSerial.hpp"
+#include "Interfaces/iwifi.hpp"
+#include "Interfaces/ishaker.hpp"
 
 #endif

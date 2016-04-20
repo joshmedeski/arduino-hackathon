@@ -1,11 +1,12 @@
 #ifndef BLINKER
 #define BLINKER
 
+#include <Interfaces/iBlinker.hpp>
 #include <avr/io.h>
 #include <avr/interrupt.h>
-#include "pins.hpp"
+#include <pins.hpp>
 
-class Blinker
+class Blinker: public IBlinker
 {
   // relies on an LED pin, defined in pins.hpp
   // duration unless notes are in milliseconds
