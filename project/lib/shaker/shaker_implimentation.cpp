@@ -1,11 +1,11 @@
-#include "shaker_implimentation.h"
+#include "shaker_implimentation.hpp"
 
 ShakerUnit::ShakerUnit()
 {
   // do stuff to implement...
 }
 
-ShakerUnit::Calibrate() {
+void ShakerUnit::Calibrate() {
   // calibrate stuff here
 }
 
