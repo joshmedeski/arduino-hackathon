@@ -1,20 +1,21 @@
 #ifndef WIFI_ACKNOWLEDGE
 #define WIFI_ACKNOWLEDGE
 
-#include "testbed.hpp"
-#include "../wifi/wifi_implimentation.hpp"
+#include <testbedCommons.hpp>
 
 class WifiCompleteTestBed: public ITestBed
 {
   public:
     WifiCompleteTestBed();
 
-    void SetBlinker(Blinker* pBlinker);
+    void SetBlinker(IBlinker* pBlinker);
+    void SetSerial(IControlledSerial* pSerial);
     void setup();
     void loop();
 
   private:
-    Blinker* m_pBlinker;
+    IBlinker* m_pBlinker;
+    IControlledSerial* m_pSerial;
     WifiCard m_Wifi;
     bool m_bState;
 };

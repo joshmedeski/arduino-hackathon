@@ -1,18 +1,19 @@
 #ifndef SHAKERTEST_ISSHAKING
 #define SHAKERTEST_ISSHAKING
 
-#include "testbed.hpp"
-#include  "../shaker/shaker_implimentation.hpp"
+#include <testbedCommons.hpp>
 
 class ShakerIsShakingTestBed: public ITestBed
 {
   public:
     ShakerIsShakingTestBed();
-    void SetBlinker(Blinker* pBlinker);// init the blinker outside before creating this class!
+    void SetBlinker(IBlinker* pBlinker);// init the blinker outside before creating this class!
+    void SetSerial(IControlledSerial* pSerial);
     void setup();
     void loop();
   private:
-    Blinker* m_pBlinker;
+    IBlinker* m_pBlinker;
+    IControlledSerial* m_pSerial;
     ShakerUnit m_Shaker;
 };
 

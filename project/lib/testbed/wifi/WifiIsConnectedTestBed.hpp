@@ -1,20 +1,21 @@
 #ifndef WIFI_ISCONNECTED
 #define WIFI_ISCONNECTED
 
-#include "testbed.hpp"
-#include "../wifi/wifi_implimentation.hpp"
+#include <testbedCommons.hpp>
 
 class WifiIsConnectedTestBed: public ITestBed
 {
   public:
     WifiIsConnectedTestBed();
 
-    void SetBlinker(Blinker* pBlinker);
+    void SetBlinker(IBlinker* pBlinker);
+    void SetSerial(IControlledSerial* pSerial);
     void setup();
     void loop();
-    
+
   private:
-    Blinker* m_pBlinker;
+    IBlinker* m_pBlinker;
+    IControlledSerial* m_pSerial;
     WifiCard m_Wifi;
 };
 

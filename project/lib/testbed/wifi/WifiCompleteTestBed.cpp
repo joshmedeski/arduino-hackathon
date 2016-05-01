@@ -6,9 +6,14 @@ WifiCompleteTestBed::WifiCompleteTestBed()
   m_bState=false;
 }
 
-void WifiCompleteTestBed::SetBlinker(Blinker *pBlinker)
+void WifiCompleteTestBed::SetBlinker(IBlinker *pBlinker)
 {
   m_pBlinker = pBlinker;
+}
+
+void WifiCompleteTestBed::SetSerial(IControlledSerial* pSerial)
+{
+  m_pSerial = pSerial;
 }
 
 void WifiCompleteTestBed::setup()

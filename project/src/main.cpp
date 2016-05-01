@@ -1,11 +1,12 @@
 #include <commons.hpp>
 #include <util/blinker.hpp>
 #include <util/controlledSerial.hpp>
+#include <shaker/ShakerCalibrateTestBed.hpp>
 
 IControlledSerial* pSerial=0;
 /** Copied from Blinker.hpp per requirments of Blink Controller **/
 IBlinker* pBlinker=0; // assign this in setup();
-
+ITestBed* pTest=0;
 
 ISR(TIMER0_COMPA_vect){//timer0 interrupt
   if(pBlinker != 0)
@@ -26,12 +27,13 @@ void setup()
   //#ifndef DEBUG // do this last!
     //pSerial->Disable(); // disables serial writing when not in debug. Saves time.
   //#endif
-
-  pSerial->PrintMessages();
+  pTest = new ShakerCalibrateTestBed();
+  pTest->setup();
 }
 
 // the loop function runs over and over again forever
 void loop()
 {
-  delay(10000);
+  pTest->loop();
+  pSerial->PrintMessages();
 }

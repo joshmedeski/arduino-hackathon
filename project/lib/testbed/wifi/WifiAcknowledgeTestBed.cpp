@@ -6,9 +6,14 @@ WifiAcknowledgeTestBed::WifiAcknowledgeTestBed()
   m_bState=false;
 }
 
-void WifiAcknowledgeTestBed::SetBlinker(Blinker *pBlinker)
+void WifiAcknowledgeTestBed::SetBlinker(IBlinker *pBlinker)
 {
   m_pBlinker = pBlinker;
+}
+
+void WifiAcknowledgeTestBed::SetSerial(IControlledSerial* pSerial)
+{
+  m_pSerial = pSerial;
 }
 
 void WifiAcknowledgeTestBed::setup()

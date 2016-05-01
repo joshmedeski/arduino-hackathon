@@ -2,9 +2,14 @@
 
 WifiIsConnectedTestBed::WifiIsConnectedTestBed(){}
 
-void WifiIsConnectedTestBed::SetBlinker(Blinker *pBlinker)
+void WifiIsConnectedTestBed::SetBlinker(IBlinker *pBlinker)
 {
   m_pBlinker = pBlinker;
+}
+
+void WifiIsConnectedTestBed::SetSerial(IControlledSerial* pSerial)
+{
+  m_pSerial = pSerial;
 }
 
 void WifiIsConnectedTestBed::setup()
