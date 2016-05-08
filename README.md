@@ -31,3 +31,7 @@ __Daniel:__
 ## Personalizing Pins
 
 To adjust the pin settings, create a `pins.personal.h` file in the `infrastructure` directory and overwrite any of the pins defined from `pins.h`.
+
+## Dependencies
+
+- [WiFi Shield Source Code](https://github.com/linksprite/ZG2100BasedWiFiShield)
