@@ -14,7 +14,7 @@ We want to build a sensor that monitors the status of your washer/dryer and can 
 ## Project Responsibilities
 
 __Josh:__
-- [ ] Research & purchase an Arduino API driven Wifi card
+- [x] Research & purchase an Arduino API driven [Wifi shield](http://store.cutedigi.com/wifi-shield-wishield-v2-0-for-arduino/)
 - [ ] Write infrastructure for Wifi card
   + [ ] Connect to wifi card API
   + [ ] Connect to IFTTT API
