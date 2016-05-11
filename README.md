@@ -14,7 +14,7 @@ We want to build a sensor that monitors the status of your washer/dryer and can 
 ## Project Responsibilities
 
 __Josh:__
-- [ ] Research & purchase an Arduino API driven Wifi card
+- [x] Research & purchase an Arduino API driven [Wifi shield](http://store.cutedigi.com/wifi-shield-wishield-v2-0-for-arduino/)
 - [ ] Write infrastructure for Wifi card
   + [ ] Connect to wifi card API
   + [ ] Connect to IFTTT API
@@ -31,6 +31,10 @@ __Daniel:__
 ## Personalizing Pins
 
 To adjust the pin settings, create a `pins.personal.h` file in the `infrastructure` directory and overwrite any of the pins defined from `pins.h`.
+
+## Dependencies
+
+- [WiFi Shield Source Code](https://github.com/linksprite/ZG2100BasedWiFiShield)
 
 ## Device workflow:
 - 1. User will start their Dryer/Washing Machine
