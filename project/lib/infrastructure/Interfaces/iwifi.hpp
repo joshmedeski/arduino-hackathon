@@ -5,6 +5,7 @@ class IWifi {
   public:
     virtual bool IsConnected()=0;
     virtual void Acknowledge()=0;
+    virtual void NegativeAcknowledge()=0;
     virtual void SendCompleteMessage()=0;
 };
 

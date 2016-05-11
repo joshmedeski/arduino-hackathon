@@ -15,6 +15,11 @@ void WifiCard::Acknowledge()
   // API call to inform user of start
 }
 
+void WifiCard::NegativeAcknowledge()
+{
+  // API call to inform user of start
+}
+
 void WifiCard::SendCompleteMessage()
 {
  // API call to infrom user of end.

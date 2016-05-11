@@ -6,6 +6,7 @@ class ShakerUnit: public IShaker{
   public:
       ShakerUnit();
       void Calibrate();
+      bool IsCalibrated();
       bool IsShaking();
   private:
       // your vars here.

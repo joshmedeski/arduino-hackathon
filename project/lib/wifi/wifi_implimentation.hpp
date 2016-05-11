@@ -8,6 +8,7 @@ class WifiCard: public IWifi
       WifiCard();
       bool IsConnected();
       void Acknowledge();
+      void NegativeAcknowledge();
       void SendCompleteMessage();
   private:
       // your vars here.
