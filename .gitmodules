@@ -1,0 +1,3 @@
+[submodule "ZG2100BasedWiFiShield"]
+	path = ZG2100BasedWiFiShield
+	url = https://github.com/linksprite/ZG2100BasedWiFiShield.git
